@@ -1,32 +1,42 @@
-$primaryAccent: #2b4162;
-$secondaryAccent: #84a2a1;
+@use "./abstracts/Variables";
+@use "./abstracts/Fonts";
 
-@import "./Header";
-@import "./SecondaryHeader";
-@import "./Footer";
+@use "./components/Header";
+@use "./components/SecondaryHeader";
+@use "./components/Footer";
+@use "./components/Action";
+@use "./components/LearnMore";
+@use "./components/OurTeam";
+@use "./components/MeetTeam";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
+  img {
+    max-width: 100%;
+  }
 }
 
 .tablet-footer {
   display: none;
 }
-
 .mobile-footer {
   display: none;
 }
-
+/* Small desktop */
 @media only screen and (max-width: 1700px) {
   .midland-logo,
   .midland-logo-footer {
     width: 236px;
     height: 50px;
   }
+}
+/* Tablet */
+@media only screen and (max-width: 850px) {
+  @import "./components/TabletFooter";
+}
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  @import "./components/MobileFooter";
 }

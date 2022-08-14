@@ -1,0 +1,85 @@
+.learn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.learn-text {
+  font: normal normal normal 25px/35px Montserrat;
+  letter-spacing: 1.25px;
+  color: #161616;
+  height: auto;
+  max-width: 800px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.learn-button {
+  text-align: center;
+  font: normal normal 600 20px/24px Montserrat;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #2b4162;
+  width: 299px;
+  height: 86px;
+  border: none;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+/* Small desktop */
+@media only screen and (max-width: 1700px) {
+  .learn-text {
+    font: normal normal normal 16px/22px Montserrat;
+    letter-spacing: 0.8px;
+    max-width: 500px;
+    margin-top: 70px;
+  }
+  .learn-button {
+    font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 1.2px;
+    width: 196px;
+    height: 56px;
+    margin-bottom: 85px;
+    margin-top: 20px;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 850px) {
+  .learn-text {
+    max-width: 439px;
+    font: normal normal normal 20px Montserrat;
+    letter-spacing: 1px;
+    margin-top: 60px;
+  }
+  .learn-button {
+    font: normal normal 600 20px/24px Montserrat;
+    letter-spacing: 2px;
+    width: 284px;
+    height: 78px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  .learn-text {
+    font: normal normal normal 14px Montserrat;
+    letter-spacing: 0.7px;
+    max-width: 305px;
+    margin-top: 40px;
+  }
+  .learn-button {
+    font: normal normal 600 18px Montserrat;
+    letter-spacing: 1.8px;
+    width: 237px;
+    height: 69px;
+    margin-bottom: 35px;
+    margin-top: 40px;
+  }
+}

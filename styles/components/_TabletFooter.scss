@@ -1,0 +1,106 @@
+.main-footer {
+  display: none;
+}
+
+.midland-logo-footer {
+  width: 345px;
+  height: 73px;
+}
+
+.tablet-footer a {
+  text-decoration: none;
+  text-align: left;
+  font: normal normal 600 18px/22px proxima-soft;
+  letter-spacing: 0.9px;
+  color: #2b4162;
+}
+
+.tablet-footer address {
+  font: normal normal 600 18px/23px proxima-soft;
+  letter-spacing: 0.72px;
+  color: #2b4162;
+}
+
+.team {
+  opacity: 0.75;
+}
+.footer-location-container {
+  display: flex;
+  gap: 15px;
+}
+.team-container {
+  display: flex;
+  flex-direction: column;
+}
+.footer-icons-container {
+  display: flex;
+  gap: 40px;
+}
+
+.tablet-footer {
+  display: flex;
+  flex-direction: column;
+  height: 659px;
+  .tablet-footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 70px;
+  }
+  .tablet-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 80px;
+    margin-right: 130px;
+  }
+  .tablet-footer-column-one {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .tablet-footer-column-two {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .tablet-footer-button {
+    width: 223px;
+    height: 60px;
+    text-align: center;
+    font: normal normal 600 18px Montserrat;
+    letter-spacing: 1.8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #2b4162;
+    border: none;
+    cursor: pointer;
+  }
+  .tablet-footer-icon-location {
+    width: 18px;
+    height: 25px;
+    align-self: center;
+  }
+  .tablet-footer-icon-phone {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+  }
+  .tablet-footer-icon-fb {
+    width: 14px;
+    height: 28px;
+    align-self: center;
+    margin-right: 8px;
+  }
+  .tablet-footer-icon-in {
+    width: 26px;
+    height: 26px;
+    align-self: center;
+  }
+  .tablet-footer-icon-twitter {
+    width: 30px;
+    height: 24px;
+    align-self: center;
+  }
+}

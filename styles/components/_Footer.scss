@@ -1,4 +1,4 @@
-footer a {
+.main-footer a {
   text-decoration: none;
   text-align: left;
   font: normal normal 600 18px/22px proxima-soft;
@@ -6,13 +6,13 @@ footer a {
   color: #2b4162;
 }
 
-footer address {
+.main-footer address {
   font: normal normal 600 18px/23px proxima-soft;
   letter-spacing: 0.72px;
   color: #2b4162;
 }
 
-footer {
+.main-footer {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
@@ -103,16 +103,16 @@ footer {
 }
 
 @media only screen and (max-width: 1700px) {
-  footer a {
+  .main-footer a {
     font: normal normal 600 11px/13px Proxima Soft;
     letter-spacing: 0.55px;
   }
 
-  footer address {
+  .main-footer address {
     font: normal normal 600 11px/14px Proxima Soft;
     letter-spacing: 0.44px;
   }
-  footer {
+  .main-footer {
     height: 258px;
     margin-top: 100px;
     .footer-logo {

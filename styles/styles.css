@@ -133,6 +133,12 @@
     height: 19px;
   }
 }
+@media only screen and (max-width: 330px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .secondary-header {
   display: flex;
   justify-content: space-between;
@@ -187,7 +193,7 @@
     display: none;
   }
 }
-footer a {
+.main-footer a {
   text-decoration: none;
   text-align: left;
   font: normal normal 600 18px/22px proxima-soft;
@@ -195,13 +201,13 @@ footer a {
   color: #2b4162;
 }
 
-footer address {
+.main-footer address {
   font: normal normal 600 18px/23px proxima-soft;
   letter-spacing: 0.72px;
   color: #2b4162;
 }
 
-footer {
+.main-footer {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
@@ -210,70 +216,70 @@ footer {
   margin-left: 10%;
   margin-right: 10%;
 }
-footer .footer-logo {
+.main-footer .footer-logo {
   margin-top: 30px;
 }
-footer .column-one,
-footer .column-two,
-footer .column-three,
-footer .column-four {
+.main-footer .column-one,
+.main-footer .column-two,
+.main-footer .column-three,
+.main-footer .column-four {
   display: flex;
   flex-direction: column;
   gap: 45px;
 }
-footer .team-container {
+.main-footer .team-container {
   display: flex;
   flex-direction: column;
 }
-footer .team {
+.main-footer .team {
   opacity: 0.75;
 }
-footer .footer-location-container {
+.main-footer .footer-location-container {
   display: flex;
   gap: 20px;
 }
-footer .footer-icons-container {
+.main-footer .footer-icons-container {
   display: flex;
   gap: 40px;
 }
-footer .column-three-four-container {
+.main-footer .column-three-four-container {
   display: flex;
 }
-footer .footer-icon-location {
+.main-footer .footer-icon-location {
   align-self: center;
 }
-footer .midland-logo {
+.main-footer .midland-logo {
   width: 359px;
   height: 76px;
 }
-footer .fb-logo {
+.main-footer .fb-logo {
   width: 16px;
   height: auto;
   align-self: center;
 }
-footer .in-logo {
+.main-footer .in-logo {
   width: 28px;
   height: auto;
   align-self: center;
 }
-footer .twitter-logo {
+.main-footer .twitter-logo {
   width: 33px;
   height: auto;
   align-self: center;
 }
-footer .footer-icon-fb {
+.main-footer .footer-icon-fb {
   width: 16px;
   height: auto;
   align-self: center;
   cursor: pointer;
 }
-footer .footer-icon-in {
+.main-footer .footer-icon-in {
   width: 28px;
   height: auto;
   align-self: center;
   cursor: pointer;
 }
-footer .footer-icon-twitter {
+.main-footer .footer-icon-twitter {
   width: 33px;
   height: auto;
   align-self: center;
@@ -281,68 +287,551 @@ footer .footer-icon-twitter {
 }
 
 @media only screen and (max-width: 1700px) {
-  footer a {
+  .main-footer a {
     font: normal normal 600 11px/13px Proxima Soft;
     letter-spacing: 0.55px;
   }
-  footer address {
+  .main-footer address {
     font: normal normal 600 11px/14px Proxima Soft;
     letter-spacing: 0.44px;
   }
-  footer {
+  .main-footer {
     height: 258px;
     margin-top: 100px;
   }
-  footer .footer-logo {
+  .main-footer .footer-logo {
     margin-top: 20px;
   }
-  footer .midland-logo,
-footer .midland-logo-footer {
+  .main-footer .midland-logo,
+.main-footer .midland-logo-footer {
     width: 236px;
     height: 50px;
   }
-  footer .column-one,
-footer .column-two,
-footer .column-three,
-footer .column-four {
+  .main-footer .column-one,
+.main-footer .column-two,
+.main-footer .column-three,
+.main-footer .column-four {
     gap: 25px;
   }
-  footer .footer-location-container {
+  .main-footer .footer-location-container {
     gap: 15px;
   }
-  footer .footer-icons-container {
+  .main-footer .footer-icons-container {
     gap: 30px;
   }
-  footer .footer-icon-location {
+  .main-footer .footer-icon-location {
     width: 12px;
     height: 17px;
   }
-  footer .footer-icon-phone {
+  .main-footer .footer-icon-phone {
     width: 16px;
     height: 16px;
   }
-  footer .footer-icon-fb {
+  .main-footer .footer-icon-fb {
     width: 10px;
     height: 20px;
   }
-  footer .footer-icon-in {
+  .main-footer .footer-icon-in {
     width: 18px;
     height: 18px;
     align-self: center;
   }
-  footer .footer-icon-twitter {
+  .main-footer .footer-icon-twitter {
     width: 21px;
     height: 17px;
     align-self: center;
   }
 }
+.action-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  background: #f3f3f3 0% 0% no-repeat padding-box;
+}
+
+.action-container-inner {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.action-container-title {
+  text-align: center;
+  font: normal normal 600 50px/74px IvyJournal;
+  letter-spacing: 2.5px;
+  color: #2b4162;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.action-container-p {
+  text-align: center;
+  max-width: 800px;
+  font: normal normal normal 25px/35px Montserrat;
+  letter-spacing: 1.25px;
+  color: #161616;
+  height: 65px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1536px;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+  font: normal normal 600 50px/74px IvyJournal;
+  letter-spacing: 2.5px;
+  color: #2b4162;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.action-button {
+  width: 360px;
+  height: 218px;
+  background-color: #2b4162;
+  font: normal normal 600 20px/24px Montserrat;
+  letter-spacing: 2px;
+  color: #fdfdfd;
+  border: none;
+  cursor: pointer;
+}
+
+/* Small desktop */
+@media only screen and (max-width: 1700px) {
+  .action-container-title {
+    font: normal normal 600 32px/48px IvyJournal;
+    letter-spacing: 1.6px;
+    letter-spacing: 2.5px;
+    margin-top: 65px;
+    margin-bottom: 30px;
+  }
+  .action-container-p {
+    max-width: 500px;
+    font: normal normal normal 16px/22px Montserrat;
+    letter-spacing: 0.8px;
+  }
+  .buttons-container {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+  .action-button {
+    width: 236px;
+    height: 143px;
+    font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 1.2px;
+    color: #fdfdfd;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 850px) {
+  .action-container-title {
+    font: normal normal 600 30px IvyJournal;
+    letter-spacing: 1.5px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .action-container-p {
+    display: none;
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 0px;
+  }
+  .action-button {
+    width: 333px;
+    height: 181px;
+    background-color: #2b4162;
+    font: normal normal 600 20px Montserrat;
+    letter-spacing: 2px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  .action-container-title {
+    font: normal normal 600 25px IvyJournal;
+    letter-spacing: 1.25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .action-container-p {
+    display: none;
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0px;
+  }
+  .action-button {
+    width: 230px;
+    height: 137px;
+    background-color: #2b4162;
+    font: normal normal 600 16px Montserrat;
+    letter-spacing: 1.6px;
+  }
+}
+.learn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.learn-text {
+  font: normal normal normal 25px/35px Montserrat;
+  letter-spacing: 1.25px;
+  color: #161616;
+  height: auto;
+  max-width: 800px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.learn-button {
+  text-align: center;
+  font: normal normal 600 20px/24px Montserrat;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #2b4162;
+  width: 299px;
+  height: 86px;
+  border: none;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+/* Small desktop */
+@media only screen and (max-width: 1700px) {
+  .learn-text {
+    font: normal normal normal 16px/22px Montserrat;
+    letter-spacing: 0.8px;
+    max-width: 500px;
+    margin-top: 70px;
+  }
+  .learn-button {
+    font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 1.2px;
+    width: 196px;
+    height: 56px;
+    margin-bottom: 85px;
+    margin-top: 20px;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 850px) {
+  .learn-text {
+    max-width: 439px;
+    font: normal normal normal 20px Montserrat;
+    letter-spacing: 1px;
+    margin-top: 60px;
+  }
+  .learn-button {
+    font: normal normal 600 20px/24px Montserrat;
+    letter-spacing: 2px;
+    width: 284px;
+    height: 78px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  .learn-text {
+    font: normal normal normal 14px Montserrat;
+    letter-spacing: 0.7px;
+    max-width: 305px;
+    margin-top: 40px;
+  }
+  .learn-button {
+    font: normal normal 600 18px Montserrat;
+    letter-spacing: 1.8px;
+    width: 237px;
+    height: 69px;
+    margin-bottom: 35px;
+    margin-top: 40px;
+  }
+}
+.our-team {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #707070;
+  gap: 100px;
+}
+
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
+  font: normal normal normal 25px/35px Montserrat;
+  letter-spacing: 1.25px;
+  color: #161616;
+}
+
+.our-team-picture {
+  max-width: 100%;
+  height: auto;
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+
+.introduction-title {
+  font: normal normal 600 50px/74px IvyJournal;
+  letter-spacing: 2.5px;
+  color: #2b4162;
+}
+
+.introduction-button {
+  width: 299px;
+  height: 86px;
+  background-color: #2b4162;
+  border: none;
+  font: normal normal 600 20px/24px Montserrat;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.introduction-paragraph-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 725px;
+}
+
+/* 4k */
+@media only screen and (min-width: 2560px) {
+  .our-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Small desktop */
+@media only screen and (max-width: 1700px) {
+  .our-team {
+    gap: 20px;
+  }
+  .introduction-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+    font: normal normal normal 16px Montserrat;
+    letter-spacing: 0.8px;
+    color: #161616;
+  }
+  .our-team-picture {
+    max-width: 568px;
+    height: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+  .introduction-title {
+    font: normal normal 600 32px/48px IvyJournal;
+    letter-spacing: 1.6px;
+    color: #2b4162;
+  }
+  .introduction-button {
+    width: 196px;
+    height: 56px;
+    background-color: #2b4162;
+    border: none;
+    font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .introduction-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 465px;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 850px) {
+  .our-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    border: none;
+  }
+  .introduction-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .our-team-picture {
+    max-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  .introduction-title {
+    text-align: center;
+    font: normal normal 600 30px IvyJournal;
+    letter-spacing: 1.5px;
+  }
+  .introduction-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 621px;
+    text-align: left;
+    font: normal normal normal 20px Montserrat;
+    letter-spacing: 1px;
+  }
+  .introduction-button {
+    width: 284px;
+    height: 78px;
+    font: normal normal 600 20px Montserrat;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  .our-team {
+    gap: 0px;
+  }
+  .our-team-picture {
+    max-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  .introduction-title {
+    font: normal normal 600 25px IvyJournal;
+    letter-spacing: 1.25px;
+    margin-top: 40px;
+  }
+  .introduction-container {
+    gap: 20px;
+  }
+  .introduction-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 305px;
+    text-align: left;
+    font: normal normal normal 14px Montserrat;
+    letter-spacing: 0.7px;
+  }
+  .introduction-button {
+    width: 237px;
+    height: 69px;
+    font: normal normal 600 18px Montserrat;
+    letter-spacing: 1.8px;
+    margin-top: 20px;
+  }
+}
+.meet-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  gap: 75px;
+}
+
+.meet-team-title {
+  font: normal normal 600 50px/74px IvyJournal;
+  letter-spacing: 2.5px;
+  margin-top: 122px;
+  margin-bottom: 80px;
+  color: #2b4162;
+}
+
+.group-one {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 245px;
+  padding-right: 245px;
+  gap: 100px;
+}
+
+.group-two {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 245px;
+  padding-right: 245px;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 470px;
+}
+
+.member-name {
+  text-align: left;
+  font: normal normal bold 35px/43px Montserrat;
+  letter-spacing: 1.75px;
+  color: #84a2a1;
+  text-transform: uppercase;
+}
+
+.member-icon-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.member-position {
+  text-align: center;
+  font: normal normal 600 30px/37px Montserrat;
+  letter-spacing: 1.5px;
+  color: #161616;
+  margin-top: 10px;
+  height: 74px;
+}
+
+.plus-icon {
+  align-self: center;
+  width: 32px;
+  cursor: pointer;
+}
+
+.member-picture {
+  width: 262px;
+  height: 262px;
+}
+
+.experience {
+  text-align: center;
+  font: normal normal 600 30px/37px Montserrat;
+  letter-spacing: 1.5px;
+  color: #84a2a1;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-img {
+* img {
   max-width: 100%;
 }
 
@@ -354,10 +843,232 @@ img {
   display: none;
 }
 
+/* Small desktop */
 @media only screen and (max-width: 1700px) {
   .midland-logo,
 .midland-logo-footer {
     width: 236px;
     height: 50px;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 850px) {
+  .main-footer {
+    display: none;
+  }
+  .midland-logo-footer {
+    width: 345px;
+    height: 73px;
+  }
+  .tablet-footer a {
+    text-decoration: none;
+    text-align: left;
+    font: normal normal 600 18px/22px proxima-soft;
+    letter-spacing: 0.9px;
+    color: #2b4162;
+  }
+  .tablet-footer address {
+    font: normal normal 600 18px/23px proxima-soft;
+    letter-spacing: 0.72px;
+    color: #2b4162;
+  }
+  .team {
+    opacity: 0.75;
+  }
+  .footer-location-container {
+    display: flex;
+    gap: 15px;
+  }
+  .team-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-icons-container {
+    display: flex;
+    gap: 40px;
+  }
+  .tablet-footer {
+    display: flex;
+    flex-direction: column;
+    height: 659px;
+  }
+  .tablet-footer .tablet-footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 70px;
+  }
+  .tablet-footer .tablet-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 130px;
+  }
+  .tablet-footer .tablet-footer-column-one {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .tablet-footer .tablet-footer-column-two {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .tablet-footer .tablet-footer-button {
+    width: 223px;
+    height: 60px;
+    text-align: center;
+    font: normal normal 600 18px Montserrat;
+    letter-spacing: 1.8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #2b4162;
+    border: none;
+    cursor: pointer;
+  }
+  .tablet-footer .tablet-footer-icon-location {
+    width: 18px;
+    height: 25px;
+    align-self: center;
+  }
+  .tablet-footer .tablet-footer-icon-phone {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+  }
+  .tablet-footer .tablet-footer-icon-fb {
+    width: 14px;
+    height: 28px;
+    align-self: center;
+    margin-right: 8px;
+  }
+  .tablet-footer .tablet-footer-icon-in {
+    width: 26px;
+    height: 26px;
+    align-self: center;
+  }
+  .tablet-footer .tablet-footer-icon-twitter {
+    width: 30px;
+    height: 24px;
+    align-self: center;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  .tablet-footer {
+    display: none;
+  }
+  .tablet-footer-icon-location {
+    width: 18px;
+    height: 25px;
+    align-self: center;
+  }
+  .tablet-footer-icon-phone {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+  }
+  .tablet-footer-icon-fb {
+    width: 14px;
+    height: 28px;
+    align-self: center;
+    margin-right: 8px;
+  }
+  .tablet-footer-icon-in {
+    width: 26px;
+    height: 26px;
+    align-self: center;
+  }
+  .tablet-footer-icon-twitter {
+    width: 30px;
+    height: 24px;
+    align-self: center;
+  }
+  .footer-icons-container {
+    gap: 40px;
+  }
+  .mobile-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .midland-logo-mobile-footer {
+    margin-top: 50px;
+    width: 268px;
+    height: 57px;
+  }
+  .mobile-footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 45px;
+  }
+  .team-container {
+    gap: 12px;
+  }
+  .mobile-footer-column-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .mobile-footer-column-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 9px;
+    gap: 40px;
+  }
+  .mobile-footer a {
+    text-decoration: none;
+    text-align: left;
+    font: normal normal 600 16px proxima-soft;
+    letter-spacing: 0.8px;
+    color: #2b4162;
+  }
+  .mobile-footer address {
+    text-decoration: none;
+    text-align: left;
+    font: normal normal 600 16px proxima-soft;
+    letter-spacing: 0.64px;
+    color: #2b4162;
+  }
+  .mobile-footer-button {
+    width: 206px;
+    height: 55px;
+    text-align: center;
+    font: normal normal 600 16px Montserrat;
+    letter-spacing: 1.6px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #2b4162;
+    border: none;
+    cursor: pointer;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+  .mobile-address-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-icons-container {
+    margin-top: 55px;
+    margin-bottom: 50px;
+  }
+  .tablet-footer-icon-location {
+    width: 16px;
+    height: 24px;
+    align-self: center;
+  }
+  .tablet-footer-icon-phone {
+    width: 20px;
+    height: 20px;
+    align-self: center;
   }
 }/*# sourceMappingURL=styles.css.map */

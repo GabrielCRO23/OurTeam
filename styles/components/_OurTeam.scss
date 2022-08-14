@@ -1,0 +1,173 @@
+.our-team {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #707070;
+  gap: 100px;
+}
+
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
+  font: normal normal normal 25px/35px Montserrat;
+  letter-spacing: 1.25px;
+  color: #161616;
+}
+.our-team-picture {
+  max-width: 100%;
+  height: auto;
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+.introduction-title {
+  font: normal normal 600 50px/74px IvyJournal;
+  letter-spacing: 2.5px;
+  color: #2b4162;
+}
+.introduction-button {
+  width: 299px;
+  height: 86px;
+  background-color: #2b4162;
+  border: none;
+  font: normal normal 600 20px/24px Montserrat;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.introduction-paragraph-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 725px;
+}
+/* 4k */
+@media only screen and (min-width: 2560px) {
+  .our-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Small desktop */
+@media only screen and (max-width: 1700px) {
+  .our-team {
+    gap: 20px;
+  }
+  .introduction-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+    font: normal normal normal 16px Montserrat;
+    letter-spacing: 0.8px;
+    color: #161616;
+  }
+  .our-team-picture {
+    max-width: 568px;
+    height: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+  .introduction-title {
+    font: normal normal 600 32px/48px IvyJournal;
+    letter-spacing: 1.6px;
+    color: #2b4162;
+  }
+  .introduction-button {
+    width: 196px;
+    height: 56px;
+    background-color: #2b4162;
+    border: none;
+    font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .introduction-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 465px;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 850px) {
+  .our-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    border: none;
+  }
+  .introduction-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-team-picture {
+    max-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  .introduction-title {
+    text-align: center;
+    font: normal normal 600 30px IvyJournal;
+    letter-spacing: 1.5px;
+  }
+  .introduction-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 621px;
+    text-align: left;
+    font: normal normal normal 20px Montserrat;
+    letter-spacing: 1px;
+  }
+  .introduction-button {
+    width: 284px;
+    height: 78px;
+    font: normal normal 600 20px Montserrat;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  .our-team {
+    gap: 0px;
+  }
+  .our-team-picture {
+    max-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  .introduction-title {
+    font: normal normal 600 25px IvyJournal;
+    letter-spacing: 1.25px;
+    margin-top: 40px;
+  }
+  .introduction-container {
+    gap: 20px;
+  }
+  .introduction-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 305px;
+    text-align: left;
+    font: normal normal normal 14px Montserrat;
+    letter-spacing: 0.7px;
+  }
+  .introduction-button {
+    width: 237px;
+    height: 69px;
+    font: normal normal 600 18px Montserrat;
+    letter-spacing: 1.8px;
+    margin-top: 20px;
+  }
+}

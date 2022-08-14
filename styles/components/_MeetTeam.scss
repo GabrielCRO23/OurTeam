@@ -1,0 +1,83 @@
+.meet-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  gap: 75px;
+}
+
+.meet-team-title {
+  font: normal normal 600 50px/74px IvyJournal;
+  letter-spacing: 2.5px;
+  margin-top: 122px;
+  margin-bottom: 80px;
+  color: #2b4162;
+}
+
+.group-one {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 245px;
+  padding-right: 245px;
+  gap: 100px;
+}
+.group-two {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 245px;
+  padding-right: 245px;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 470px;
+}
+
+.member-name {
+  text-align: left;
+  font: normal normal bold 35px/43px Montserrat;
+  letter-spacing: 1.75px;
+  color: #84a2a1;
+  text-transform: uppercase;
+}
+
+.member-icon-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.member-position {
+  text-align: center;
+  font: normal normal 600 30px/37px Montserrat;
+  letter-spacing: 1.5px;
+  color: #161616;
+  margin-top: 10px;
+  height: 74px;
+}
+
+.plus-icon {
+  align-self: center;
+  width: 32px;
+  cursor: pointer;
+}
+
+.member-picture {
+  width: 262px;
+  height: 262px;
+}
+
+.experience {
+  text-align: center;
+  font: normal normal 600 30px/37px Montserrat;
+  letter-spacing: 1.5px;
+  color: #84a2a1;
+}

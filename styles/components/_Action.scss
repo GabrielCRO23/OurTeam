@@ -1,0 +1,142 @@
+.action-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  background: #f3f3f3 0% 0% no-repeat padding-box;
+}
+
+.action-container-inner {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.action-container-title {
+  text-align: center;
+  font: normal normal 600 50px/74px IvyJournal;
+  letter-spacing: 2.5px;
+  color: #2b4162;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.action-container-p {
+  text-align: center;
+  max-width: 800px;
+  font: normal normal normal 25px/35px Montserrat;
+  letter-spacing: 1.25px;
+  color: #161616;
+  height: 65px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1536px;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+  font: normal normal 600 50px/74px IvyJournal;
+  letter-spacing: 2.5px;
+  color: #2b4162;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.action-button {
+  width: 360px;
+  height: 218px;
+  background-color: #2b4162;
+  font: normal normal 600 20px/24px Montserrat;
+  letter-spacing: 2px;
+  color: #fdfdfd;
+  border: none;
+  cursor: pointer;
+}
+
+/* Small desktop */
+@media only screen and (max-width: 1700px) {
+  .action-container-title {
+    font: normal normal 600 32px/48px IvyJournal;
+    letter-spacing: 1.6px;
+    letter-spacing: 2.5px;
+    margin-top: 65px;
+    margin-bottom: 30px;
+  }
+  .action-container-p {
+    max-width: 500px;
+    font: normal normal normal 16px/22px Montserrat;
+    letter-spacing: 0.8px;
+  }
+  .buttons-container {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+  .action-button {
+    width: 236px;
+    height: 143px;
+    font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 1.2px;
+    color: #fdfdfd;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 850px) {
+  .action-container-title {
+    font: normal normal 600 30px IvyJournal;
+    letter-spacing: 1.5px;
+
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .action-container-p {
+    display: none;
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 0px;
+  }
+
+  .action-button {
+    width: 333px;
+    height: 181px;
+    background-color: #2b4162;
+    font: normal normal 600 20px Montserrat;
+    letter-spacing: 2px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  .action-container-title {
+    font: normal normal 600 25px IvyJournal;
+    letter-spacing: 1.25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .action-container-p {
+    display: none;
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0px;
+  }
+
+  .action-button {
+    width: 230px;
+    height: 137px;
+    background-color: #2b4162;
+    font: normal normal 600 16px Montserrat;
+    letter-spacing: 1.6px;
+  }
+}

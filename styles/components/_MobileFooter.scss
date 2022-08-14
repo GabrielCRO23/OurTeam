@@ -1,0 +1,120 @@
+.tablet-footer {
+  display: none;
+}
+
+.tablet-footer-icon-location {
+  width: 18px;
+  height: 25px;
+  align-self: center;
+}
+.tablet-footer-icon-phone {
+  width: 24px;
+  height: 24px;
+  align-self: center;
+}
+.tablet-footer-icon-fb {
+  width: 14px;
+  height: 28px;
+  align-self: center;
+  margin-right: 8px;
+}
+.tablet-footer-icon-in {
+  width: 26px;
+  height: 26px;
+  align-self: center;
+}
+.tablet-footer-icon-twitter {
+  width: 30px;
+  height: 24px;
+  align-self: center;
+}
+.footer-icons-container {
+  gap: 40px;
+}
+
+.mobile-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.midland-logo-mobile-footer {
+  margin-top: 50px;
+  width: 268px;
+  height: 57px;
+}
+
+.mobile-footer-logo {
+  display: flex;
+  justify-content: center;
+}
+.mobile-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 45px;
+}
+.team-container {
+  gap: 12px;
+}
+.mobile-footer-column-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+.mobile-footer-column-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 9px;
+  gap: 40px;
+}
+.mobile-footer a {
+  text-decoration: none;
+  text-align: left;
+  font: normal normal 600 16px proxima-soft;
+  letter-spacing: 0.8px;
+  color: #2b4162;
+}
+
+.mobile-footer address {
+  text-decoration: none;
+  text-align: left;
+  font: normal normal 600 16px proxima-soft;
+  letter-spacing: 0.64px;
+  color: #2b4162;
+}
+.mobile-footer-button {
+  width: 206px;
+  height: 55px;
+  text-align: center;
+  font: normal normal 600 16px Montserrat;
+  letter-spacing: 1.6px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #2b4162;
+  border: none;
+  cursor: pointer;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.mobile-address-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer-icons-container {
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+.tablet-footer-icon-location {
+  width: 16px;
+  height: 24px;
+  align-self: center;
+}
+.tablet-footer-icon-phone {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
