@@ -1,0 +1,162 @@
+footer a {
+  text-decoration: none;
+  text-align: left;
+  font: normal normal 600 18px/22px proxima-soft;
+  letter-spacing: 0.9px;
+  color: #2b4162;
+}
+
+footer address {
+  font: normal normal 600 18px/23px proxima-soft;
+  letter-spacing: 0.72px;
+  color: #2b4162;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 394px;
+  margin-top: 170px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  .footer-logo {
+    margin-top: 30px;
+  }
+
+  .column-one,
+  .column-two,
+  .column-three,
+  .column-four {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .team-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team {
+    opacity: 0.75;
+  }
+
+  .footer-location-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-icons-container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .column-three-four-container {
+    display: flex;
+  }
+
+  .footer-icon-location {
+    align-self: center;
+  }
+
+  .midland-logo {
+    width: 359px;
+    height: 76px;
+  }
+
+  .fb-logo {
+    width: 16px;
+    height: auto;
+    align-self: center;
+  }
+  .in-logo {
+    width: 28px;
+    height: auto;
+    align-self: center;
+  }
+  .twitter-logo {
+    width: 33px;
+    height: auto;
+    align-self: center;
+  }
+
+  .footer-icon-fb {
+    width: 16px;
+    height: auto;
+    align-self: center;
+    cursor: pointer;
+  }
+  .footer-icon-in {
+    width: 28px;
+    height: auto;
+    align-self: center;
+    cursor: pointer;
+  }
+  .footer-icon-twitter {
+    width: 33px;
+    height: auto;
+    align-self: center;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  footer a {
+    font: normal normal 600 11px/13px Proxima Soft;
+    letter-spacing: 0.55px;
+  }
+
+  footer address {
+    font: normal normal 600 11px/14px Proxima Soft;
+    letter-spacing: 0.44px;
+  }
+  footer {
+    height: 258px;
+    margin-top: 100px;
+    .footer-logo {
+      margin-top: 20px;
+    }
+    .midland-logo,
+    .midland-logo-footer {
+      width: 236px;
+      height: 50px;
+    }
+    .column-one,
+    .column-two,
+    .column-three,
+    .column-four {
+      gap: 25px;
+    }
+
+    .footer-location-container {
+      gap: 15px;
+    }
+    .footer-icons-container {
+      gap: 30px;
+    }
+    .footer-icon-location {
+      width: 12px;
+      height: 17px;
+    }
+    .footer-icon-phone {
+      width: 16px;
+      height: 16px;
+    }
+    .footer-icon-fb {
+      width: 10px;
+      height: 20px;
+    }
+    .footer-icon-in {
+      width: 18px;
+      height: 18px;
+      align-self: center;
+    }
+    .footer-icon-twitter {
+      width: 21px;
+      height: 17px;
+      align-self: center;
+    }
+  }
+}

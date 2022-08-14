@@ -1,0 +1,363 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 156px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.header .header-icons {
+  display: flex;
+  gap: 40px;
+  max-width: 100%;
+}
+.header .header-icons img {
+  cursor: pointer;
+}
+.header .hamburger-icon {
+  display: none;
+}
+.header .header-button {
+  width: 282px;
+  height: 71px;
+  text-align: center;
+  font: normal normal 600 20px/24px Montserrat;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #2b4162;
+  border: none;
+  cursor: pointer;
+}
+.header .midland-logo {
+  width: 359px;
+  height: 76px;
+}
+.header .fb-logo {
+  width: 16px;
+  height: auto;
+  align-self: center;
+}
+.header .in-logo {
+  width: 28px;
+  height: auto;
+  align-self: center;
+}
+.header .twitter-logo {
+  width: 33px;
+  height: auto;
+  align-self: center;
+}
+
+/* Smaller Desktop Size */
+@media only screen and (max-width: 1700px) {
+  .header {
+    width: 100%;
+    height: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .header .header-icons {
+    gap: 25px;
+  }
+  .header .fb-logo {
+    width: 10px;
+    height: 20px;
+    align-self: center;
+  }
+  .header .in-logo {
+    width: 19px;
+    height: 19px;
+    align-self: center;
+  }
+  .header .twitter-logo {
+    width: 22px;
+    height: 18px;
+    align-self: center;
+  }
+  .header .midland-logo,
+.header .midland-logo-footer {
+    width: 236px;
+    height: 50px;
+  }
+  .header .header-button {
+    width: 186px;
+    height: 47px;
+    letter-spacing: 1.5px;
+    font: normal normal 600 15px/19px Montserrat;
+  }
+}
+/* Tablet Size */
+@media only screen and (max-width: 850px) {
+  .header {
+    height: 140px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .header .header-icons {
+    display: none;
+  }
+  .header .hamburger-icon {
+    display: flex;
+    width: 29px;
+    height: 19px;
+  }
+  .header .header-button {
+    width: 223px;
+    height: 60px;
+    font: normal normal 600 18px Montserrat;
+    letter-spacing: 1.8px;
+  }
+}
+/* Mobile Size */
+@media only screen and (max-width: 769px) {
+  .header {
+    height: 128px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .header .header-icons {
+    display: none;
+  }
+  .header .header-button {
+    display: none;
+  }
+  .header .midland-logo {
+    width: 230px;
+    height: 50px;
+  }
+  .header .hamburger-icon {
+    width: 29px;
+    height: 19px;
+  }
+}
+.secondary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.secondary-header .navbar-text {
+  text-transform: uppercase;
+  list-style: none;
+  font: normal normal 600 18px/22px Montserrat;
+  letter-spacing: 0.9px;
+  color: #9f9f9f;
+  cursor: pointer;
+  text-decoration: none;
+}
+.secondary-header .down-arrow {
+  width: 12px;
+  height: 7px;
+  cursor: pointer;
+}
+.secondary-header .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 1700px) {
+  .secondary-header {
+    height: 85px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .secondary-header .navbar-text {
+    font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 0.6px;
+  }
+  .secondary-header .down-arrow {
+    width: 8px;
+    height: 5px;
+  }
+  .secondary-header .icon-container {
+    gap: 7px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .secondary-header {
+    display: none;
+  }
+}
+footer a {
+  text-decoration: none;
+  text-align: left;
+  font: normal normal 600 18px/22px proxima-soft;
+  letter-spacing: 0.9px;
+  color: #2b4162;
+}
+
+footer address {
+  font: normal normal 600 18px/23px proxima-soft;
+  letter-spacing: 0.72px;
+  color: #2b4162;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 394px;
+  margin-top: 170px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+footer .footer-logo {
+  margin-top: 30px;
+}
+footer .column-one,
+footer .column-two,
+footer .column-three,
+footer .column-four {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+footer .team-container {
+  display: flex;
+  flex-direction: column;
+}
+footer .team {
+  opacity: 0.75;
+}
+footer .footer-location-container {
+  display: flex;
+  gap: 20px;
+}
+footer .footer-icons-container {
+  display: flex;
+  gap: 40px;
+}
+footer .column-three-four-container {
+  display: flex;
+}
+footer .footer-icon-location {
+  align-self: center;
+}
+footer .midland-logo {
+  width: 359px;
+  height: 76px;
+}
+footer .fb-logo {
+  width: 16px;
+  height: auto;
+  align-self: center;
+}
+footer .in-logo {
+  width: 28px;
+  height: auto;
+  align-self: center;
+}
+footer .twitter-logo {
+  width: 33px;
+  height: auto;
+  align-self: center;
+}
+footer .footer-icon-fb {
+  width: 16px;
+  height: auto;
+  align-self: center;
+  cursor: pointer;
+}
+footer .footer-icon-in {
+  width: 28px;
+  height: auto;
+  align-self: center;
+  cursor: pointer;
+}
+footer .footer-icon-twitter {
+  width: 33px;
+  height: auto;
+  align-self: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1700px) {
+  footer a {
+    font: normal normal 600 11px/13px Proxima Soft;
+    letter-spacing: 0.55px;
+  }
+  footer address {
+    font: normal normal 600 11px/14px Proxima Soft;
+    letter-spacing: 0.44px;
+  }
+  footer {
+    height: 258px;
+    margin-top: 100px;
+  }
+  footer .footer-logo {
+    margin-top: 20px;
+  }
+  footer .midland-logo,
+footer .midland-logo-footer {
+    width: 236px;
+    height: 50px;
+  }
+  footer .column-one,
+footer .column-two,
+footer .column-three,
+footer .column-four {
+    gap: 25px;
+  }
+  footer .footer-location-container {
+    gap: 15px;
+  }
+  footer .footer-icons-container {
+    gap: 30px;
+  }
+  footer .footer-icon-location {
+    width: 12px;
+    height: 17px;
+  }
+  footer .footer-icon-phone {
+    width: 16px;
+    height: 16px;
+  }
+  footer .footer-icon-fb {
+    width: 10px;
+    height: 20px;
+  }
+  footer .footer-icon-in {
+    width: 18px;
+    height: 18px;
+    align-self: center;
+  }
+  footer .footer-icon-twitter {
+    width: 21px;
+    height: 17px;
+    align-self: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.tablet-footer {
+  display: none;
+}
+
+.mobile-footer {
+  display: none;
+}
+
+@media only screen and (max-width: 1700px) {
+  .midland-logo,
+.midland-logo-footer {
+    width: 236px;
+    height: 50px;
+  }
+}/*# sourceMappingURL=styles.css.map */

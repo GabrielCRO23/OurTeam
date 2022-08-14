@@ -1,0 +1,32 @@
+$primaryAccent: #2b4162;
+$secondaryAccent: #84a2a1;
+
+@import "./Header";
+@import "./SecondaryHeader";
+@import "./Footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.tablet-footer {
+  display: none;
+}
+
+.mobile-footer {
+  display: none;
+}
+
+@media only screen and (max-width: 1700px) {
+  .midland-logo,
+  .midland-logo-footer {
+    width: 236px;
+    height: 50px;
+  }
+}
