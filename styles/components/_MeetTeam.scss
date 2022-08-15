@@ -1,10 +1,10 @@
 .meet-team {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f3f3f3;
-  gap: 75px;
 }
 
 .meet-team-title {
@@ -20,8 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 245px;
-  padding-right: 245px;
+  padding-left: 10%;
+  padding-right: 10%;
   gap: 100px;
 }
 .group-two {
@@ -29,8 +29,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 245px;
-  padding-right: 245px;
+  gap: 124px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 120px;
 }
 
 .member {
@@ -38,7 +40,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 470px;
+  min-width: 443px;
 }
 
 .member-name {
@@ -61,6 +63,7 @@
   letter-spacing: 1.5px;
   color: #161616;
   margin-top: 10px;
+  min-width: 464px;
   height: 74px;
 }
 
@@ -74,10 +77,70 @@
   width: 262px;
   height: 262px;
 }
+.member-email {
+  width: 39px;
+  height: 39px;
 
+  cursor: pointer;
+}
+.member-linkedin {
+  width: 41px;
+  height: 41px;
+
+  cursor: pointer;
+}
+.member-contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  margin-top: 20px;
+}
 .experience {
   text-align: center;
   font: normal normal 600 30px/37px Montserrat;
   letter-spacing: 1.5px;
   color: #84a2a1;
+}
+.additional-exp {
+  display: flex;
+  flex-direction: column;
+}
+#JAVASCRIPTTEST {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #84a2a1;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  margin-bottom: 80px;
+}
+.member-bio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 525px;
+  margin-right: 525px;
+}
+.member-about {
+  text-align: left;
+  font: normal normal 800 20px/24px Montserrat;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.member-bio {
+  font: normal normal normal 20px Montserrat;
+  max-width: 869px;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.polygon {
+  margin-top: 20px;
+  display: none;
 }
